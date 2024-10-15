@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Gauche from '../assets/Grand_rideau_texte_portfolio2';
+import Droit from '../assets/Petit_rideau_portfolio';
 import './Curtain.css';
 
 export function Curtain() {
@@ -56,7 +58,7 @@ export function Curtain() {
           right: 0,
           bottom: 0,
           width: '250px',
-          backgroundImage: `url('src/assets/Petit_rideau_portfolio-removebg-preview.png')`,
+          backgroundImage: {Droit},
           backgroundSize: 'cover', // L'image couvre toute la surface
           backgroundPosition: 'center',
           zIndex: 15, // Devant le grand rideau
@@ -80,7 +82,7 @@ export function Curtain() {
           right: 0,
           bottom: 0,
           width: '100vw',
-          backgroundImage: `url('src/assets/Grand_rideau_texte_portfolio2.jpg')`, // Remplacer par le chemin de votre image
+          backgroundImage: {Gauche}, // Remplacer par le chemin de votre image
           backgroundSize: 'cover', // L'image couvre toute la surface
           backgroundPosition: 'center',
           cursor: 'grab',
