@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Gauche from '../assets/Grand_rideau_texte_portfolio2';
-import Droit from '../assets/Petit_rideau_portfolio';
+import Gauche from 'front/src/assets/Grand_rideau_texte_portfolio2.jpg';
+import Droit from 'front/src/assets/Petit_rideau_portfolio-removebg-preview.png';
 import './Curtain.css';
 
 export function Curtain() {
@@ -33,7 +33,8 @@ export function Curtain() {
       <div style={{ position: 'absolute', top: 0, left: 0, right: 150, bottom: 0 }}>
         <h1>Bonjour, je m'appelle François Ribere</h1>
         <h2>Titulaire d'un diplôme de niveau 6 de Concepteur-Développeur d'Applications</h2>
-        <h2>A la recherche d'une alternance dans le domaine de la transformation digitale</h2>
+        <h2>Chargé d'analyse data en alternance</h2>
+        {/* <h2>A la recherche d'une alternance dans le domaine de la transformation digitale</h2> */}
         <p>Cliquez sur l'une des catégories ci-dessous pour en savoir plus sur moi</p>
         <div className="">
             {/* <button className='categ'>Mes compétences</button>
